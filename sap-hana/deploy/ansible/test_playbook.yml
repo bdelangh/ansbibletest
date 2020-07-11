@@ -25,6 +25,3 @@
     - role: inventory-validation
       when:
         - hana_database.size != "LargeInstance"
-
-- debug :
-    msg: InventoryDir {{ inventory_dir }}
