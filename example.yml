@@ -1,0 +1,27 @@
+---  
+- james: 
+   name: james john 
+   rollNo: 34 
+   div: B 
+   sex: male 
+   likes: 
+      - maths 
+      - physics 
+      - english 
+   
+   result: 
+      maths: 87 
+      chemistry: 45 
+      biology: 56 
+      physics: 70 
+      english: 80 
+   
+   passed: TRUE 
+   
+   messageIncludeNewLines: | 
+      Congratulation!! 
+      You passed with 79% 
+   
+   messageExcludeNewLines: > 
+      Congratulation!! 
+      You passed with 79% 
