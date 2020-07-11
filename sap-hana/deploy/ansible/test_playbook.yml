@@ -5,7 +5,7 @@
   become_user: root
   pre_tasks:
     - debug: 
-        msg : "Started deployment" 
+        msg: "Started deployment" 
     - name: Include output JSON
       include_vars:
         file: "{{ inventory_dir }}/output.json"
