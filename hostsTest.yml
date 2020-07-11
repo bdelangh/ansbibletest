@@ -1,0 +1,22 @@
+all:
+  children:
+    ansible_list:
+      hosts:
+        40.68.46.207:
+          ansible_connection:  "ssh"
+          ansible_user:        "bdelangh"
+        13.95.69.233:
+          ansible_connection:  "ssh"
+          ansible_user:        "bdelangh"
+
+    ansible1:
+      hosts:
+        40.68.46.207:
+          ansible_connection:  "ssh"
+          ansible_user:        "bdelangh"
+
+    ansible2:
+      hosts:
+        13.95.69.233S:
+          ansible_connection:  "ssh"
+          ansible_user:        "bdelangh"
