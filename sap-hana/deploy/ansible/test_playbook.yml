@@ -8,6 +8,7 @@
       include_vars:
         file: "{{ inventory_dir }}/output.json"
         name: output
+    - debug: msg = "Started deployment" 
 
     - name: Create dictionary with HANA database inforamtion from output.JSON
       set_fact:
@@ -26,6 +27,3 @@
 
 - debug :
     msg: InventoryDir {{ inventory_dir }}
-
-- debug :
-    msg: InventoryDir {{ inventory_hostname }}
