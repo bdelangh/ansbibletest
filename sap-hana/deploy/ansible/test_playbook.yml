@@ -4,11 +4,11 @@
   become: true
   become_user: root
   pre_tasks:
+    - debug: msg = "Started deployment" 
     - name: Include output JSON
       include_vars:
         file: "{{ inventory_dir }}/output.json"
         name: output
-        debug: msg = "Started deployment" 
 
     - name: Create dictionary with HANA database inforamtion from output.JSON
       set_fact:
